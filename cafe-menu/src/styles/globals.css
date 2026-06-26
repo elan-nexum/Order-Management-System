@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  /* Café Élan palette */
+  --color-cafe: #1C242A;
+  --color-cafe-dark: #14171A;
+  --color-cafe-light: #2A211C;
+  --color-cafe-accent-l: #EFEADF;
+  --color-cafe-accent-d: #E1DBD2;
+  --color-cafe-accent-y: #DBB45F;
+}
+
+body {
+    background: #0f0f0f;
+    color: #f8f8f8;
+    font-family: "Inter", sans-serif;
+  }
+  
+  .font-serif {
+    font-family: "Playfair Display", serif;
+  }
+  
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  * {
+    scroll-behavior: smooth;
+  }
+
+.glass{
+ background:rgba(255,255,255,.05);
+ backdrop-filter:blur(16px);
+ border:1px solid rgba(255,255,255,.1);
+}
